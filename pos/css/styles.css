@@ -1,0 +1,226 @@
+/* Estilos para el logo de la tienda */
+.estilo_logo {
+    /* Ancho del logo al 100% del contenedor padre */
+    width: 100%;
+    /* Establece un ancho máximo de 60px para que no sea muy grande */
+    max-width: 60px;
+    /* Altura automática para mantener la proporción de la imagen */
+    height: auto;
+    /* Margen derecho de 20px para separar el logo del título */
+    margin-right: 20px;
+    /* Posición absoluta para ubicar el logo en una posición fija */
+    position: absolute;
+}
+
+/* Estilos para el título principal y subtítulo */
+.titulo_principal {
+    /* Usa flexbox para organizar los elementos */
+    display: flex;
+    /* Los elementos se organizan verticalmente uno debajo del otro */
+    flex-direction: column;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra el texto dentro de los elementos */
+    text-align: center;
+}
+
+/* Estilos para el título principal */
+.titulo {
+    /* Elimina los márgenes predeterminados del título */
+    margin: 0%;
+}
+
+/* Estilos para el subtítulo */
+.subtitulo {
+    /* Elimina los márgenes predeterminados del subtítulo */
+    margin: 0%;
+}
+
+/* Estilos para el contenedor principal de la tabla */
+.contenedor {
+    /* Tamaño de fuente extra grande */
+    font-size: x-large;
+    /* Altura del 60% de la pantalla */
+    height: 60vh;
+    /* Permite scroll vertical si el contenido es mayor que la altura */
+    overflow-y: auto;
+    /* Borde sólido de 1px de color negro */
+    border: 1px solid black;
+}
+
+/* Estilos para la tabla de productos */
+#productos_id {
+    /* Altura máxima del 50% */
+    max-height: 50%;
+    /* Ancho del 100% del contenedor */
+    width: 100%;
+    /* Tamaño de fuente más grande */
+    font-size: larger;
+    /* Colapsa los bordes de las celdas para que no haya espacios */
+    border-collapse: collapse;
+}
+
+/* Estilos para los encabezados (th) de la tabla */
+#productos_id th {
+    /* Alinea el texto a la izquierda */
+    text-align: left;
+    /* Añade separación interna de 8px */
+    padding: 8px;
+}
+
+/* Estilos para la columna de producto */
+.col-producto {
+    /* Ancho de la columna al 50% */
+    width: 50%;
+}
+
+/* Estilos para la columna de precio */
+.col-precio {
+    /* Ancho de la columna al 15% */
+    width: 15%;
+    /* Alinea el texto a la derecha */
+    text-align: right;
+}
+
+/* Estilos para la columna de cantidad */
+.col-cantidad {
+    /* Ancho de la columna al 15% */
+    width: 15%;
+    /* Centra el texto */
+    text-align: center;
+}
+
+/* Estilos para la columna de total */
+.col-total {
+    /* Ancho de la columna al 20% */
+    width: 20%;
+    /* Alinea el texto a la derecha */
+    text-align: right;
+}
+
+/* Estilos para las celdas de datos de la tabla de productos */
+#products_id td {
+    /* Añade separación interna de 8px */
+    padding: 8px;
+}
+
+/* Estilos para la columna de cantidad */
+.titulo_cantidad {
+    /* Ancho de la columna al 10% */
+    width: 10%;
+}
+
+/* Estilos para el cuerpo de la tabla de carrito */
+#carrito {
+    /* Altura máxima del 10% */
+    max-height: 10%;
+    /* Ancho del 100% del contenedor */
+    width: 100%;
+    /* Tamaño de fuente más grande */
+    font-size: larger;
+}
+
+/* Estilos especiales para la fila de total */
+#carrito .fila-total {
+    /* Borde superior sólido de 2px negro para separar del resto */
+    border-top: 2px solid black;
+    /* Texto en negrita para destacar el total */
+    font-weight: bold;
+    /* Color de fondo gris claro para destacar la fila */
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el campo de entrada de texto */
+.inputStyle {
+    /* Tamaño de fuente muy grande */
+    font-size: xx-large;
+    /* Ancho del 100% menos 8px para evitar desbordamiento */
+    width: calc(100% - 8px);
+}
+
+/* Estilos para los botones */
+.inputStyleButton {
+    /* Altura de 15% del alto visible de la pantalla */
+    height: 15vh;
+    /* Ancho de 20% del alto dinámico visible de la pantalla */
+    width: 20dvh;
+    /* Escala la imagen de fondo para que cubra todo el botón */
+    background-size: cover;
+    /* Evita que la imagen de fondo se repita */
+    background-repeat: no-repeat;
+    /* Posiciona la imagen de fondo en el centro */
+    background-position: center;
+    /* Cambia el cursor del ratón a una mano señalando */
+    cursor: pointer;
+}
+
+/* Estilos para el botón 1 */
+#boton1 {
+    /* Imagen de fondo del botón desde la carpeta img */
+    background-image: url("../img/img1.png");
+    /* Tamaño de la imagen al 70% */
+    background-size: 70%;
+    /* Posiciona la imagen en el centro */
+    background-position: center;
+    /* No permite que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Separación interna de 10px alrededor de la imagen */
+    padding: 10px;
+}
+
+/* Estilos para el botón 2 */
+#boton2 {
+    /* Imagen de fondo del botón desde la carpeta img */
+    background-image: url("../img/img2.png");
+    /* Tamaño de la imagen al 70% */
+    background-size: 70%;
+    /* Posiciona la imagen en el centro */
+    background-position: center;
+    /* No permite que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Separación interna de 10px alrededor de la imagen */
+    padding: 10px;
+}
+
+/* Estilos para el botón 3 */
+#boton3 {
+    /* Imagen de fondo del botón desde la carpeta img */
+    background-image: url("../img/img3.png");
+    /* Tamaño de la imagen al 70% */
+    background-size: 70%;
+    /* Posiciona la imagen en el centro */
+    background-position: center;
+    /* No permite que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Separación interna de 10px alrededor de la imagen */
+    padding: 10px;
+}
+
+/* Estilos para el botón 4 */
+#boton4 {
+    /* Imagen de fondo del botón desde la carpeta img */
+    background-image: url("../img/img4.png");
+    /* Tamaño de la imagen al 70% */
+    background-size: 70%;
+    /* Posiciona la imagen en el centro */
+    background-position: center;
+    /* No permite que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Separación interna de 10px alrededor de la imagen */
+    padding: 10px;
+}
+
+/* Estilos para el botón 5 */
+#boton5 {
+    /* Imagen de fondo del botón desde la carpeta img */
+    background-image: url("../img/img5.png");
+    /* Tamaño de la imagen al 70% */
+    background-size: 70%;
+    /* Posiciona la imagen en el centro */
+    background-position: center;
+    /* No permite que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Separación interna de 10px alrededor de la imagen */
+    padding: 10px;
+}
+

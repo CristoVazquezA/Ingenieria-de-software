@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de venta</title> 
+    <script src="js/functions.js"></script>
+    <script src="js/productos.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img src="./img/logo.png" class="estilo_logo">
+
+    <!-- titulo principal-->
+     <div class="titulo_principal">
+        <h1 class="titulo">Geek store</h1>
+        <h2 class="subtitulo">VideoJuegos, Gadgets y tecnología. </h2>
+     </div>
+
+     <!--Area principal donde se mostraran los productos-->
+     <div class="contenedor">
+
+        <table border="0" id="productos_id">
+            <tr>
+                <th class="col-producto">Producto</th>
+                <th class="col-precio">Precio</th>
+                <th class="col-cantidad">Cantidad</th>
+                <th class="col-total">Total</th>
+            </tr>
+
+            <tbody id="carrito">
+
+            </tbody>
+        </table>
+
+     </div>
+
+     <input type="text" name="" id="codigo" class="inputStyle" onkeydown="buscarProducto(event);" value="" autofocus>
+
+     <div class="botones">
+        <input type="button" id="boton1" class="inputStyleButton">
+        <input type="button" id="boton2" class="inputStyleButton">
+        <input type="button" id="boton3" class="inputStyleButton">
+        <input type="button" id="boton4" class="inputStyleButton">
+        <input type="button" id="boton5" class="inputStyleButton">
+
+     </div>
+</body>
+</html>
